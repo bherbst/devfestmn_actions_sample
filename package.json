@@ -1,0 +1,27 @@
+{
+  "name": "devfestmn-actions-sample",
+  "description": "DevFest MN Actions Sample",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Bryan Herbst",
+  "engines": {
+    "node": "~4.2"
+  },
+  "scripts": {
+    "lint": "semistandard --fix \"**/*.js\"",
+    "start": "node app.js",
+    "monitor": "nodemon app.js"
+  },
+  "bin": {
+    "update-teams": "./update-teams.js"
+  },
+  "dependencies": {
+    "actions-on-google": "^1.0.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.13.4",
+    "weather-js": "^1.0.2"
+  },
+  "devDependencies": {
+    "semistandard": "^9.1.0"
+  }
+}
